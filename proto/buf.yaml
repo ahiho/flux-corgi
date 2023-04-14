@@ -1,0 +1,6 @@
+version: v1
+deps:
+  # adding well known types by google
+  - buf.build/googleapis/googleapis
+  - buf.build/grpc-ecosystem/grpc-gateway
+  - buf.build/envoyproxy/protoc-gen-validate

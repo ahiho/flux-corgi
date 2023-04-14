@@ -1,0 +1,8 @@
+syntax = "proto3";
+option go_package = "photogpt/pkg/proto/core";
+
+package proto.core;
+
+message ErrorDetail {
+  string code = 1;
+}

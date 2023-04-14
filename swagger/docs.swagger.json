@@ -1,0 +1,193 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "contact": {
+      "email": "tech@ahiho.com",
+      "name": "Developers"
+    },
+    "description": "Api docs for Flux Corgi",
+    "title": "Flux Corgi docs",
+    "version": "2.0"
+  },
+  "tags": [
+    {
+      "name": "SandboxService"
+    }
+  ],
+  "paths": {
+    "/sandbox:config": {
+      "post": {
+        "operationId": "SandboxService_ConfigSandbox",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/sandboxprotoConfigSandboxRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sandboxprotoConfigSandboxResponse"
+                }
+              }
+            },
+            "description": "A successful response."
+          },
+          "default": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/rpcStatus"
+                }
+              }
+            },
+            "description": "An unexpected error response."
+          }
+        },
+        "security": [
+          {
+            "x-api-key": []
+          }
+        ],
+        "tags": [
+          "SandboxService"
+        ],
+        "x-codegen-request-body-name": "body"
+      }
+    },
+    "/sandbox:deploy": {
+      "post": {
+        "operationId": "SandboxService_DeploySandbox",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/sandboxprotoDeploySandboxRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sandboxprotoDeploySandboxResponse"
+                }
+              }
+            },
+            "description": "A successful response."
+          },
+          "default": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/rpcStatus"
+                }
+              }
+            },
+            "description": "An unexpected error response."
+          }
+        },
+        "security": [
+          {
+            "x-api-key": []
+          }
+        ],
+        "tags": [
+          "SandboxService"
+        ],
+        "x-codegen-request-body-name": "body"
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "protobufAny": {
+        "additionalProperties": {
+          "type": "object"
+        },
+        "properties": {
+          "@type": {
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "rpcStatus": {
+        "properties": {
+          "code": {
+            "format": "int32",
+            "type": "integer"
+          },
+          "details": {
+            "items": {
+              "$ref": "#/components/schemas/protobufAny"
+            },
+            "type": "array"
+          },
+          "message": {
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "sandboxprotoConfigSandboxRequest": {
+        "properties": {
+          "configEncoded": {
+            "type": "string"
+          },
+          "repo": {
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "sandboxprotoConfigSandboxResponse": {
+        "type": "object"
+      },
+      "sandboxprotoDeploySandboxRequest": {
+        "properties": {
+          "image": {
+            "type": "string"
+          },
+          "pullRequestId": {
+            "format": "int32",
+            "type": "integer"
+          },
+          "repo": {
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "sandboxprotoDeploySandboxResponse": {
+        "properties": {
+          "isNew": {
+            "type": "boolean"
+          },
+          "url": {
+            "type": "string"
+          }
+        },
+        "type": "object"
+      }
+    },
+    "securitySchemes": {
+      "x-api-key": {
+        "description": "API key for tools",
+        "in": "header",
+        "name": "x-api-key",
+        "type": "apiKey"
+      }
+    }
+  },
+  "x-original-swagger-version": "2.0"
+}

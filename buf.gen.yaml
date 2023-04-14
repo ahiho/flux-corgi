@@ -1,0 +1,28 @@
+version: v1
+plugins:
+  # generate go structs for protocol buffer defination
+  - plugin: buf.build/protocolbuffers/go
+    out: pkg/proto
+    opt:
+      - paths=source_relative
+  # generate gRPC stubs in golang
+  - plugin: buf.build/grpc/go
+    out: pkg/proto
+    opt:
+      - paths=source_relative
+  # generate reverse proxy from protocol definations
+  - plugin: buf.build/grpc-ecosystem/gateway
+    out: pkg/proto
+    opt:
+      - paths=source_relative
+  # generate request validator
+  - plugin: buf.build/bufbuild/validate-go
+    out: pkg/proto
+    opt:
+      - paths=source_relative
+  # generate openapi documentation for api
+  - plugin: buf.build/grpc-ecosystem/openapiv2
+    out: swagger
+    opt:
+      - allow_merge=true
+      - merge_file_name=docs

@@ -1,0 +1,56 @@
+syntax = "proto3";
+option go_package = "fluxcorgi/pkg/proto/sandbox;sandboxproto";
+
+import "google/api/annotations.proto";
+import "protoc-gen-openapiv2/options/annotations.proto";
+import "google/protobuf/struct.proto";
+import "google/protobuf/timestamp.proto";
+
+package proto.sandboxproto;
+
+service SandboxService {
+  rpc ConfigSandbox(ConfigSandboxRequest) returns (ConfigSandboxResponse) {
+    option (google.api.http) = {
+      post: "/sandbox:config",
+      body: "*"
+    };
+    option (grpc.gateway.protoc_gen_openapiv2.options.openapiv2_operation) = {
+      security: {
+        security_requirement: {
+          key: "x-api-key"
+        }
+      }
+    };
+  }
+  rpc DeploySandbox(DeploySandboxRequest) returns (DeploySandboxResponse) {
+    option (google.api.http) = {
+      post: "/sandbox:deploy",
+      body: "*"
+    };
+    option (grpc.gateway.protoc_gen_openapiv2.options.openapiv2_operation) = {
+      security: {
+        security_requirement: {
+          key: "x-api-key"
+        }
+      }
+    };
+  }
+}
+
+message ConfigSandboxRequest {
+  string repo = 1;
+  string config_encoded = 2;
+}
+
+message ConfigSandboxResponse {}
+
+message DeploySandboxRequest {
+  string repo = 1;
+  int32 pull_request_id = 2;
+  string image = 3;
+}
+
+message DeploySandboxResponse {
+  string url = 1;
+  bool is_new = 2;
+}

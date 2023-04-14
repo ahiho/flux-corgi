@@ -1,0 +1,269 @@
+.swagger-ui {
+  font-family: Open Sans, sans-serif;
+}
+
+.swagger-ui pre {
+  font-family: Source Code Pro,monospace;
+}
+
+.swagger-ui code,.swagger-ui kbd,.swagger-ui samp {
+  font-weight: 600;
+}
+
+.swagger-ui .prop-type {
+  font-family: Source Code Pro, monospace;
+}
+
+.swagger-ui table.model tr.property-row td {
+  font-family: Source Code Pro, monospace;
+}
+
+.swagger-ui .parameter__type {
+  font-family: Source Code Pro,monospace;
+}
+
+.swagger-ui .opblock .opblock-summary-operation-id,.swagger-ui .opblock .opblock-summary-path,.swagger-ui .opblock .opblock-summary-path__deprecated {
+  font-family: Source Code Pro,monospace;
+}
+
+.swagger-ui .response-col_status .response-undocumented {
+  font-family: Source Code Pro,monospace;
+}
+
+.swagger-ui .response-col_links .response-undocumented {
+  font-family: Source Code Pro,monospace;
+}
+
+.swagger-ui .opblock-body pre.microlight {
+  font-family: Source Code Pro,monospace;
+}
+
+.swagger-ui textarea {
+  font-family: Source Code Pro,monospace;
+}
+
+.swagger-ui textarea.curl {
+  font-family: Source Code Pro,monospace;
+}
+
+.swagger-ui .checkbox p {
+  font-family: Source Code Pro,monospace;
+}
+
+.swagger-ui .model {
+  font-family: Titillium Web,monospace;
+}
+
+.swagger-ui .model-title {
+  font-family: Titillium Web,monospace;
+}
+
+.swagger-ui table.headers td {
+  font-family: Source Code Pro,monospace;
+}
+
+
+.swagger-ui .parameter__extension,.swagger-ui .parameter__in {
+  font-family: Source Code Pro,monospace;
+}
+
+.swagger-ui .parameter__deprecated {
+  font-family: Source Code Pro,monospace;
+}
+
+.swagger-ui .info .base-url {
+  font-family: Source Code Pro,monospace;
+}
+
+.swagger-ui .errors-wrapper .errors h4 {
+  font-family: Source Code Pro,monospace;
+}
+
+
+.swagger-ui .markdown code,.swagger-ui .renderedMarkdown code {
+  font-family: Source Code Pro,monospace;
+}
+
+.swagger-ui .opblock .opblock-summary-description {
+  font-size: 13px;
+  font-family: Open Sans,sans-serif;
+}
+
+/*.swagger-ui button,.swagger-ui input,.swagger-ui optgroup,.swagger-ui select,.swagger-ui textarea {*/
+/*    font-family: Source code Pro, monospace;*/
+/*    font-weight: 600;*/
+/*}*/
+
+.swagger-ui .system-sans-serif {
+  font-family: Open Sans, sans-serif
+}
+
+.swagger-ui .sans-serif {
+  font-family: -apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica,helvetica neue,ubuntu,roboto,noto,segoe ui,arial,Open Sans,sans-serif
+}
+
+.swagger-ui .opblock-tag {
+  font-family: Titillium Web, sans-serif;
+}
+
+.swagger-ui .opblock-tag small {
+  font-family: Open Sans, sans-serif;
+}
+
+.swagger-ui .opblock .opblock-section-header>label {
+  font-family: Open Sans, sans-serif;
+}
+
+.swagger-ui .opblock .opblock-section-header h4 {
+  font-family: Titillium Web, sans-serif;
+}
+
+.swagger-ui .opblock .opblock-summary-method {
+  font-family: Titillium Web, sans-serif;
+}
+
+.swagger-ui .tab li {
+  font-family: Titillium Web, sans-serif;
+}
+
+.swagger-ui .opblock-description-wrapper,.swagger-ui .opblock-external-docs-wrapper,.swagger-ui .opblock-title_normal {
+  font-family: Open Sans, sans-serif;
+}
+
+.swagger-ui .opblock-description-wrapper h4,.swagger-ui .opblock-external-docs-wrapper h4,.swagger-ui .opblock-title_normal h4 {
+  font-family: Open Sans, sans-serif;
+}
+
+.swagger-ui .opblock-description-wrapper p,.swagger-ui .opblock-external-docs-wrapper p,.swagger-ui .opblock-title_normal p {
+  font-family: Open Sans, sans-serif;
+}
+
+.swagger-ui .responses-inner h4,.swagger-ui .responses-inner h5 {
+  font-family: Open Sans, sans-serif;
+}
+
+.swagger-ui .response-col_status {
+  font-family: Open Sans, sans-serif;
+}
+
+.swagger-ui .response-col_links {
+  font-family: Open Sans, sans-serif;
+}
+
+.swagger-ui .download-contents {
+  font-family: Open Sans, sans-serif;
+}
+
+.swagger-ui .scheme-container .schemes>label {
+  font-family: Titillium Web, sans-serif;
+}
+
+.swagger-ui .loading-container .loading:after {
+  font-family: Titillium Web, sans-serif;
+}
+
+.swagger-ui section h3 {
+  font-family: Open Sans, sans-serif;
+}
+
+.swagger-ui .btn {
+  font-family: Titillium Web, sans-serif;
+}
+
+.swagger-ui .btn.cancel {
+  font-family: Titillium Web, sans-serif;
+}
+
+.swagger-ui select {
+  font-family: Titillium Web, sans-serif;
+}
+
+.swagger-ui label {
+  font-family: Titillium Web, sans-serif;
+}
+
+
+.swagger-ui .dialog-ux .modal-ux-content p {
+  font-family: Open Sans, sans-serif;
+}
+
+.swagger-ui .dialog-ux .modal-ux-content h4 {
+  font-family: Titillium Web, sans-serif;
+}
+
+.swagger-ui .dialog-ux .modal-ux-header h3 {
+  font-family: Titillium Web, sans-serif;
+}
+
+.swagger-ui section.models h4 {
+  font-family: Titillium Web, sans-serif;
+}
+
+.swagger-ui section.models h5 {
+  font-family: Titillium Web, sans-serif;
+}
+
+.swagger-ui .model-deprecated-warning {
+  font-family: Open Sans, sans-serif;
+}
+
+.swagger-ui .servers>label {
+  font-family: Open Sans, sans-serif;
+}
+
+
+.swagger-ui table thead tr td,.swagger-ui table thead tr th {
+  font-family: Open Sans, sans-serif;
+}
+
+.swagger-ui .parameter__name {
+  font-family: Titillium Web, sans-serif;
+}
+
+.swagger-ui .topbar a {
+  font-family: Titillium Web, sans-serif;
+}
+
+.swagger-ui .topbar .download-url-wrapper .download-url-button {
+  font-family: Titillium Web, sans-serif;
+}
+
+.swagger-ui .info li,.swagger-ui .info p,.swagger-ui .info table {
+  font-family: Open Sans, sans-serif;
+}
+
+.swagger-ui .info h1,.swagger-ui .info h2,.swagger-ui .info h3,.swagger-ui .info h4,.swagger-ui .info h5 {
+  font-family: Open Sans, sans-serif;
+}
+
+.swagger-ui .info a {
+  font-family: Open Sans, sans-serif;
+}
+
+.swagger-ui .info .title {
+  font-family: Open Sans, sans-serif;
+}
+
+.swagger-ui .info .title small pre {
+  font-family: Titillium Web, sans-serif;
+}
+
+.swagger-ui .scopes h2 {
+  font-family: Titillium Web, sans-serif;
+}
+
+.swagger-ui .errors-wrapper hgroup h4 {
+  font-family: Titillium Web, sans-serif;
+}
+
+.swagger-ui .model .property {
+  font-family: Source Code Pro,monospace;
+}
+
+.swagger-ui .prop-name {
+  font-family: Open Sans, sans-serif;
+}
+
+.swagger-ui .renderedMarkdown p {
+  font-family: Open Sans, sans-serif;
+}
