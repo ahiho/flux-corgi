@@ -1,0 +1,15 @@
+{
+  "name": "fluxcorgi",
+  "version": "0.0.1",
+  "description": "FluxCD Corgi",
+  "repository": "git@github.com:ahiho/flux-corgi.git",
+  "author": "Ahiho <tech@ahiho.com>",
+  "private": true,
+  "devDependencies": {
+    "@semantic-release/commit-analyzer": "^9.0.2",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^8.0.6",
+    "@semantic-release/npm": "^9.0.1",
+    "@semantic-release/release-notes-generator": "^10.0.3"
+  }
+}
