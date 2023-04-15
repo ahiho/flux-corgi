@@ -1,7 +1,0 @@
-{
-  "name": "fluxcorgi",
-  "version": "0.0.1",
-  "description": "FluxCD Corgi",
-  "repository": "git@github.com:ahiho/flux-corgi.git",
-  "author": "Ahiho <tech@ahiho.com>"
-}
