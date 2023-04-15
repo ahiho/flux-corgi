@@ -4,7 +4,11 @@
   "description": "FluxCD Corgi",
   "repository": "git@github.com:ahiho/flux-corgi.git",
   "author": "Ahiho <tech@ahiho.com>",
-  "private": true,
+  "release": {
+    "branches": [
+      "main"
+    ]
+  },
   "devDependencies": {
     "@semantic-release/commit-analyzer": "^9.0.2",
     "@semantic-release/git": "^10.0.1",
